@@ -8,16 +8,7 @@ import { Photo } from './photo';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   title = 'AluraPic';
-  photos: Photo[] = [];
-
-  constructor (private photoService: PhotoService) {}
-
-  ngOnInit(): void {
-    this.photoService
-      .listFromUser('flavio')
-      .subscribe(photos => this.photos = photos);
-  }
 }
