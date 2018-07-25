@@ -12,6 +12,10 @@
             "element",
             "ap",
             "kebab-case"
-        ]
+        ],
+        "quotemark": [
+          true,
+          "single"
+        ],
     }
 }
